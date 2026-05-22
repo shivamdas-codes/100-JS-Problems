@@ -91,14 +91,49 @@ console.log(typeof(bnum));
 
 // ## Type Conversion & Coercion
 
-// 1. Convert the string `"50"` into a number.
+// 1. Convert the string `"50"` into a number.\
+var str = "33"
+var numb = Number(str)
+console.log(numb);
+console.log(typeof(numb));
+console.log(typeof(str));
+
 // 2. Convert the number `100` into a string.
+var numbe = 100
+var stri = String(numbe)
+console.log(stri);
+console.log(typeof(stri));
+
 // 3. Convert `"true"` into a boolean.
+var str1 = "true"
+var bool = Boolean(str1)
+console.log(bool);
+console.log(typeof(bool));
+ 
 // 4. Check the output of:
 // - `"5" + 2`
+var giv1 = "5"
+var giv2 = 2
+var com = giv1 + giv2
+console.log(com);
+
 // - `"5" - 2`
+var giv3 = "5"
+var giv4 = 2
+var com2 = giv3 - giv4
+console.log(com2);
+
 // - `true + 1`
+var c = true
+var d = 1
+var com3 = c + d
+console.log(com3);
+
 // 1. Create a variable with value `"123abc"` and convert it into a number.
+var  val1 = "123abc"
+var val2 = Number(val1)
+console.log(val2);
+
 // 2. Use `parseInt()` on `"500px"`.
 
 // ---
@@ -106,15 +141,59 @@ console.log(typeof(bnum));
 // ## Operators
 
 // 1. Add two numbers and print the result.
+var sum1 = 10
+var sum2 = 20
+console.log(sum1 + sum2);
+
 // 2. Find the remainder when 25 is divided by 4.
+var sum3 = 25
+var sum4 = 4
+console.log(sum3 % sum4);
+
 // 3. Find the square of a number using exponent operator.
+var exp = 5
+console.log(exp ** 2);
+
 // 4. Increment a variable using `++`.
+var  v = 20
+v++
+console.log(v);
+
 // 5. Decrement a variable using `-`.
+var v1 = 30
+v1--
+console.log(v1);
+
 // 6. Use `+=` operator to increase a variable by 20.
+var v2 = 80
+v2 += 20
+console.log(v2);
+
 // 7. Compare two numbers using `>`, `<`, `>=`, `<=`.
+var num1 = 10
+var num2 = 20
+console.log(num1 > num2, num1 < num2, num1 >= num2, num1 <= num2);
+
 // 8. Check if two values are strictly equal using `===`.
+var num3 = 25
+var num4 = 35
+var num5 = 33
+var num6 = 33
+console.log(num3 === num4);
+console.log(num5 === num6);
+
 // 9. Compare `"10"` and `10` using both `==` and `===`.
+var str2 = "10"
+var num7 = 10 
+console.log(str2 == num7);
+console.log(str2 === num7);
+
 // 10. Create two boolean variables and test `&&`, `||`, and `!`.
+var bool2 = 0
+var bool3 = 1
+console.log(bool2 > bool3 && bool2 < bool3);
+console.log(bool2 > bool3 || bool2 < bool3);
+console.log(!bool2);
 
 // ---
 
