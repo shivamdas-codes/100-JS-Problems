@@ -75,8 +75,17 @@ var a5
 console.log(typeof(a1), typeof(a2), typeof(a3), typeof(a4), typeof(a5));
 
 // 3. Store your mobile number in a variable and check its type.
+var num = 939270691
+console.log(typeof(num));
+
 // 4. Create a variable with value `null` and check its type.
+var val = null
+console.log(typeof(val));
+
 // 5. Create a bigint number and print it.
+var bnum = 783267666216261631616n
+console.log(bnum);
+console.log(typeof(bnum));
 
 // ---
 
