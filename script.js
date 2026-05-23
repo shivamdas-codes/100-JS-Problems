@@ -135,6 +135,8 @@ var val2 = Number(val1)
 console.log(val2);
 
 // 2. Use `parseInt()` on `"500px"`.
+var val3 = parseInt("500px")
+console.log(val3);
 
 // ---
 
@@ -200,15 +202,42 @@ console.log(!bool2);
 // ## Strings
 
 // 1. Create a string and print its length.
+var stri = "string"
+console.log(stri.length);
+
 // 2. Convert a string into uppercase.
+var stri1 = "string"
+console.log(stri1.toUpperCase());
+
 // 3. Convert a string into lowercase.
+var stri2 = "STRING"
+console.log(stri2.toLowerCase());
+
 // 4. Check if a string includes the word `"JavaScript"`.
+var term = "frontend development with JavaScript"
+console.log(term.includes("JavaScript"));
+
 // 5. Extract the word `"World"` from `"Hello World"`.
+var stri4 = "Hello World"   
+console.log(stri4.substring(6, 11));
+
 // 6. Replace `"apple"` with `"mango"` in a sentence.
+var fruits = "apple, banana, grapes"
+console.log(fruits.replace("apple", "mango"));
+
 // 7. Split `"HTML,CSS,JS"` into an array.
 // 8. Remove extra spaces from a string.
+var stri3 = "   hello world   "
+console.log(stri3.trim());
+
 // 9. Repeat the word `"Hi"` 5 times.
+var word = "hi"
+console.log(word.repeat(5));
+
 // 10. Print the first character of a string.
+var word1 = "hello world"
+console.log(word1.charAt(0));
+
 // 11. Use template literals to print:`"My name is Aman and I am 20 years old"`
 
 // ---
