@@ -336,7 +336,7 @@ if (val % 3 == 0 && val % 5 == 0) {
 // - 75+ → B
 // - 50+ → C
 // - below 50 → Fail
-var marks = Number(prompt("enter your marks"))
+var marks = 85
 if (marks >= 90 && marks < 100) {
     console.log("grade is A");
 }else if (marks >= 75 && marks < 90) {
@@ -348,18 +348,64 @@ if (marks >= 90 && marks < 100) {
 }
 
 // 1. Check whether a character is a vowel or consonant.
+var char = "b"
+var vowels = "aeiouAEIOU"
+if (vowels.includes(char)) {
+    console.log("the character is a vowel");
+}else {
+    console.log("the character is a consonant");
+}
+
 // 2. Create a calculator using `switch` statement.
 // 3. Print the day name based on a number (1–7).
 // 4. Check whether a username is `"admin"` and password is `"1234"`.
+var username = "shivam"
+var pass = '2004'
+if (username == "shivam" && pass == "2004") {
+    console.log("login successful");
+}else if(username != "shivam") {
+    console.warn("invalid username");
+}else if (pass != "2004") {
+    console.warn("invalid password");
+}else {
+    console.warn("invalid username and password");
+}
 
 // ---
 
 // ## Truthy & Falsy
 
 // 1. Check whether an empty string is truthy or falsy.
+var em_st = ""
+if (em_st) {
+    console.log("truty value");
+}else {
+    console.log("falsy value");
+}
+
 // 2. Check whether `0` is truthy or falsy.
+var zero = 0
+if (zero) {
+    conole.log("truty value");
+}else {
+    console.log("falsy value");
+}
+
 // 3. Check whether `[]` is truthy or falsy.
+var arr = []
+if (arr) {
+    console.log("truty value");
+}else {
+    console.log("falsy value");
+}
+
 // 4. Create a variable and print `"Valid"` if it has a value otherwise print `"Invalid"`.
+var val2 = "shivam"
+if (val2) {
+    console.log("valid");
+}else {
+    console.log("invalid");
+}
 
 // ---
 
