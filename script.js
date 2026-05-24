@@ -226,6 +226,9 @@ var fruits = "apple, banana, grapes"
 console.log(fruits.replace("apple", "mango"));
 
 // 7. Split `"HTML,CSS,JS"` into an array.
+var stri5 = "HTML,CSS,JS"
+console.log(stri5.split(","));
+
 // 8. Remove extra spaces from a string.
 var stri3 = "   hello world   "
 console.log(stri3.trim());
@@ -239,6 +242,9 @@ var word1 = "hello world"
 console.log(word1.charAt(0));
 
 // 11. Use template literals to print:`"My name is Aman and I am 20 years old"`
+var name = "aman"
+var age = 20
+console.log(`my name is ${name} and iam ${age} years old`);
 
 // ---
 
@@ -257,17 +263,90 @@ console.log(word1.charAt(0));
 // ## Conditionals
 
 // 1. Check whether a number is positive or negative.
+var num = 0
+if (num > 0) {
+    console.log("the number is positive");
+}else if (num ==  0) {
+    console.log("zero...zero hota hai yaar itna bhi nai pata tuje");
+}else {
+    console.log("the number is negative");
+}
+
 // 2. Check whether a number is even or odd.
+var num1 = 3
+if (num1 % 2 == 0) {
+    console.log("the number is even");
+}else {
+    console.log("the number is odd");
+}
+
 // 3. Check whether a person is eligible to vote.
+var  age = 18
+if (age < 18 ) {
+    console.log("tereko kisne bola be vote karne ke liye...chal nikal yaha se");
+}else if (age == 18) {
+    console.log("kya baat hai baccha bada hogaya...chal jaldi se vote kar");
+}else if (age > 18 && age < 60) {
+    console.log("yes....aap vote karsakte hai");
+}else {
+    console.log("kripiya apni sehat ka khayal rakhe...vote karne ke liye thoda sa wait kare");
+}
+
 // 4. Find the largest among two numbers.
+var num2 = 46
+var num3 = 56
+if (num2 == num3) {
+    console.log("the numbers are same");
+}else if (num2 > num3) {
+    console.log("largest number is ", num2);
+}else {
+    console.log("largest number is ", num3);
+}
+
 // 5. Find the largest among three numbers.
+var s1 = 45
+var s2 = 67
+var s3 = 23
+if (s1 > s2  && s1 > s3) {
+    console.log("largest number is ", s1);
+}else if (s2 > s3 && s2 > s1) {
+    console.log("largest number is ", s2);
+}else {
+    console.log("largest number is ", s3);
+}
+
 // 6. Check whether a year is a leap year.
+var year = 2026
+if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+    console.log(year, "is a leap year");
+}else {
+    console.log(year, "is not a leap year");
+}
+
 // 7. Check whether a number is divisible by both 3 and 5.
+var val = 12
+if (val % 3 == 0 && val % 5 == 0) {
+    console.log(val, "is divisible by both 3 and 5");
+}else {
+    console.log(val, "is not divisible by both 3 and 5");
+}
+
 // 8. Create a simple grading system:
 // - 90+ → A
 // - 75+ → B
 // - 50+ → C
 // - below 50 → Fail
+var marks = Number(prompt("enter your marks"))
+if (marks >= 90 && marks < 100) {
+    console.log("grade is A");
+}else if (marks >= 75 && marks < 90) {
+    console.log("grade is B");
+}else if (marks >= 50 && marks < 75) {
+    console.log("grade is C");
+}else if (marks < 50) {
+    console.log("grade is fail");
+}
+
 // 1. Check whether a character is a vowel or consonant.
 // 2. Create a calculator using `switch` statement.
 // 3. Print the day name based on a number (1–7).
